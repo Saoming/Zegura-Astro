@@ -1,0 +1,43 @@
+---
+import Layouts from "../layouts/base.astro";
+
+const { title = 'Zegura Agency' } = Astro.props;
+---
+<Layouts metaTitle={title}>
+	<!-- Hero Section  -->
+	<section class="flex flex-col gap-12 items-center w-full text-white">
+		<h2> ¿Qué hacemos? </h2>
+		<div>
+			<h1 class="grid text-center">
+				<span class="stroke-text">Marketing Digital,</span>
+				<span class="stroke-text">Branding, </span>
+				<span class="stroke-text">App y Diseño Web</span>
+			</h1>
+		</div>
+	</section>
+	<!-- Section 2 -->
+	<section class="flex flex-col justify-center w-full mx-auto text-center">
+		<p class="text-white hero-paragraph stroke-text">
+			Somos una Agencia de Marketing Digital <br /> orgullosamente Mexicana,
+		</p>
+		<p class="text-white hero-paragraph stroke-text">
+			Apasionados en crear estrategias digitales <br /> 
+			inteligentes para que tu empresa se posicione en el <br /> 
+			mercado, atraiga clientes potenciales y cumpla con <br />
+			sus objetivos de venta.
+		</p>
+	</section>
+	<!-- Section 3 -->
+	<section class="flex flex-col gap-12 items-center w-full text-white">
+		<h2> Servicios </h2>
+		<div>
+			<p class="text-center stroke-text hero-paragraph">
+				Impulsamos tu negocio mediante:
+			</p>
+		</div>
+	</section>
+	<!-- Section 4 Slider -->
+	<section class="flex flex-col gap-12 w-full text-white">
+		
+	</section>
+</Layouts>
