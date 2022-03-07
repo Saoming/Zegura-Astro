@@ -1,6 +1,6 @@
 ---
 
-import Header from "../components/Header.jsx"
+import Header from "../components/Header.astro"
 
 const { metaTitle = '', lang= '', metaDescription = '', article = '', absoluteUrl = '', metaImage = '', author = '' } = Astro.props;
 const YearToday = new Date();
@@ -38,7 +38,7 @@ const YearToday = new Date();
   <meta name="twitter:image:alt" content={metaTitle} />}
   <link rel="stylesheet" href={Astro.resolve("../styles/global.css")}> </head> 
   <body class="bg-lightDark">
-    <Header client:visible />
+    <Header />
     <main>
       <slot />
     </main>
